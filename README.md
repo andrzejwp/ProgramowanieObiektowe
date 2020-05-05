@@ -109,6 +109,7 @@ Poniżej przykłady, z pozoru błahych, acz opłakanych w skutkach, zaniechań i
     * @param[in] y - numer kolumny
     * @param[in] wartosc - wartość
     * @return - kod błędu lub 0 w przypadku powodzenia
+    */
    int ustaw_wartosc(int **arr, int x, int y, int wartosc);
    ```
 
