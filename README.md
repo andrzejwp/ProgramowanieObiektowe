@@ -86,6 +86,31 @@ Poniżej przykłady, z pozoru błahych, acz opłakanych w skutkach, zaniechań i
         wynik = dodaj(a,b); // spodziewamy sie wynik = 5, a mamy 7.
     }
     ```
+5. Brak plików nagłówkowych, includowanie plików `.cpp`:
+   Pliki `.cpp` nie powinny być włączane przez `#include`, do tego służą pliki **nagłówkowe**. W plikach nagłówkowych powinny znaleźć się **deklaracje** funkcji, wraz z ich doc-blockami (zgodnymi z formatem Doxygen). Definicje funkcji mają pozostać w plikach `.cpp`.
+   
+   ```
+   #include "menu.cpp"
+   ```
+   
+   a powinno być:
+   
+   ```
+   #include "menu.h"
+   ```
+   
+6. Brak docblocków w plikach nagłówkowych
+   Pliki nagłówkowe miały być przez Państwa uzupełnione o dokumentację "wejść" i "wyjść" Państwa funkcji:
+   
+   ```
+   /**
+    * @param[in,out] arr - tablica dwuwymiarowa
+    * @param[in] x - numer wiersza
+    * @param[in] y - numer kolumny
+    * @param[in] wartosc - wartość
+    * @return - kod błędu lub 0 w przypadku powodzenia
+   int ustaw_wartosc(int **arr, int x, int y, int wartosc);
+   ```
 
 ## Lab 3
 
