@@ -99,7 +99,7 @@ Poniżej przykłady, z pozoru błahych, acz opłakanych w skutkach, zaniechań i
    #include "menu.h"
    ```
    
-6. Brak docblocków w plikach nagłówkowych
+6. Brak docblocków (zgodnych z formatem Doxygen) w plikach nagłówkowych
    Pliki nagłówkowe miały być przez Państwa uzupełnione o dokumentację "wejść" i "wyjść" Państwa funkcji:
    
    ```
