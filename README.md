@@ -113,6 +113,41 @@ Poniżej przykłady, z pozoru błahych, acz opłakanych w skutkach, zaniechań i
    int ustaw_wartosc(int **arr, int x, int y, int wartosc);
    ```
 
+7. Brak informacji o wystąpieniu błędów, która powinna być przesyłana między podprogramami
+
+W przypadku gdy jedna z funkcji napotka na problem w działaniu - należy tę informację zwrócić jako kod błędu (a kiedyś - jako wyjątek). Kod ten powinien zostać "obsłużony" w programie wywołującym daną funkcję - czyli w tym przypadku w menu.cpp, które jest doskonałym miejscem aby poinformować użytkownika o występowaniu problemów.
+
+Poniżej przedstawiam jeden ze sposobów implementacji, analogiczny do tego, w jaki sposób funkcjonuje to w środowisku UNIX (kod wyjścia programu):
+
+```
+
+int ustawWartoscKomorki(int **arr, int iloscWierzy, int iloscKolumn, int wartosc, int wiersz, int kolumna){
+
+   if(wiersz > iloscWierszy || kolumna > iloscKolumn){
+      return ERR_INVALID_SIZE;
+   }
+
+   ...
+   return 0;
+}
+```
+
+a w taki sposób można poradzić sobie z taką sytuacją w programie wywołującym podprogram `ustawWartoscKomorki()`:
+
+```
+// ...
+  int wartosc;
+  cin >> wartosc;
+  // ...
+
+   int err = ustawWartoscKomorki(arr, 5, 5, wartosc, 10, 12);
+   if(err){
+      cout << "Wystapil blad - wskazano niepoprawny adres komorki do zmiany..." << endl;
+   }
+   
+```
+
+
 ## Lab 3
 
 Proszę zdefiniować w programach strukturę `Tablica`, w której umieścicie Państwo:
