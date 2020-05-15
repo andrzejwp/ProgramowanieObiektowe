@@ -148,7 +148,7 @@ a w taki sposób można poradzić sobie z taką sytuacją w programie wywołują
 ```
 
 
-## Lab 3
+## Lab 3, max termin oddania: 18 maja
 
 Proszę zdefiniować w programach strukturę `Tablica`, w której umieścicie Państwo:
 
@@ -179,3 +179,62 @@ Proszę dodatkowo zaimplementować w programie następujące funkcjonalności:
     * najmniejszej
     * największej
     * średniej
+
+## Lab 4, max termin oddania: 22 maja
+
+Proszę na bazie programu z zadania 3 wykonać program, w którym struktura zostanie zastąpiona prostą klasą.
+
+Proszę przeanalizować 2 sposoby implementacji:
+
+```
+class Array {
+    public:
+    int sizeX;
+    int sizeY;
+    int **arr;
+    
+    int setSize(int X, int Y);
+    int setValue(int X, int Y, int value);
+    
+    ...
+    
+};
+```
+
+i 
+
+```
+class Tablica {
+    
+    public:
+    int setSize(int X, int Y);
+    int setValue(int X, int Y, int value);
+    
+    ...
+     
+    private:
+    int rozmiarX;
+    int rozmiarY;
+    int **arr;
+};
+```
+
+jakie są wady i zalety wykorzystania jednego, a jakie drugiego? Który sposób jest poprawny, dlaczego? Proszę przygotować się do odpowiedzi na te pytania.
+
+
+## Lab 5, max termin oddania: 25 maja
+
+Proszę do programu wprowadzić dodatkowo klasę, która będzie reprezentować wartość w pojedynczej komórce:
+
+```
+class Cell {
+    // ?
+};
+```
+
+proszę zaprezentować sposób obsługi różnych typów danych (np. `int`, `string`) - **uwaga**, na początek ograniczamy się do 1 typu danych na cały arkusz, ale chcemy mieć możliwość utworzenia arkusza dla liczb i arkusza dla danych tekstowych.
+
+
+## Lab 6, max termin oddania: 5 czerwca
+
+Proszę zaprezentować sposób umieszczenia w 1 arkuszu kolumn różnego typu, np 3 kolumnowy arkusz, w którym będą kolumny: {Liczby, Tekst, Tekst}.
