@@ -16,6 +16,7 @@ Program dzielimy na 4 pliki:
 - tablica_wysw.cpp
 - menu.cpp
 
+0. Program powinien zostać umieszczony w repozytorium w serwisie Github.com, aby nabrać wprawy w korzystaniu z gita - proszę przejść przez 3 pierwsze lekcje (co najmniej!) w serwisie [Catacoda](https://www.katacoda.com/courses/git)
 1. upewniacie się Państwo, że potraficie zbudować program składający się z 4 plików (`g++ plik1.cpp plik2.cpp ...`).
 2. uzupełniacie poszczególne funkcje w plikach, ale bez ich zawartości
 3. zastanawiacie się nad tym jakie WEJSCIA i jakie WYJSCIA powinny posiadać poszczególne funkcje - uzupełniacie argumenty i typy zwracane
