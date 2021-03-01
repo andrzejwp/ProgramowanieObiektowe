@@ -8,8 +8,7 @@ Oczekiwania odnośnie programu:
 - mogę zmieniać rozmiar tablicy
 - mogę aktualizować zawartość tablicy
 - mogę wyświetlać zawartość tablicy na ekranie
-- chcę komunikować się z programem przy pomocy tekstowego interfejsu użytkownika
-- chcę aby zawartość arkusza mogła być zapisywana na dysk i wczytywana z dysku.
+- chcę komunikować się z programem przy pomocy tekstowego interfejsu użytkownika.
 
 Program dzielimy na 4 pliki:
 - main.cpp
